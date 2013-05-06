@@ -5,7 +5,14 @@
 //  Created by deepak mishra on 2/5/13.
 //
 
+
 #import "MicBlowViewController.h"
+
+typedef enum
+{
+    START_STATE =0,
+    RESET_STATE =1
+}STATE_OF_UI; //FOR SHOWING A PARTICULAR STATE TO USER
 
 #define FINISH_POINT    45      // y coordinate
 #define LIMITED_TIME    30.0    // in secs
@@ -30,6 +37,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //SETTING THE UI TO START STATE
+    [self UIState:START_STATE];
 	
     // URL WHERE WE SAVED THE AUDIO FILE CAPTURED BUT AS HERE ITS NOT OF OUR USE SO WE WILL NOT SAVE ANY
     NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
@@ -98,8 +108,7 @@
     self.timeLimitCounter = 0; // TIME COUNTER
     self.limitedTimer = [NSTimer scheduledTimerWithTimeInterval:LIMITED_TIME target:self selector:@selector(limitedTimeReached:) userInfo:nil repeats:NO];
     
-    [self.startButton setEnabled:NO];
-    [self.resetButton setEnabled:YES];
+    [self UIState:RESET_STATE];
     
     if (self.recorder) {
         [self.recorder prepareToRecord];
@@ -113,8 +122,7 @@
 
 - (IBAction)resetTheBlow:(UIButton *)sender
 {
-    [self.startButton setEnabled:YES];
-    [self.resetButton setEnabled:NO];
+    [self UIState:START_STATE];
     
     [self.levelTimer invalidate];
     [self.limitedTimer invalidate];
@@ -136,9 +144,34 @@
                                              self.view.frame.size.height - 88,
                                              self.ballObject.frame.size.width,
                                              self.ballObject.frame.size.height)];
+        [self UIState:START_STATE];
+    }
+}
+
+
+//*******************************************//
+#pragma mark - UI STATE WHETHER TO START OR RESET
+//*******************************************//
+-(void)UIState:(STATE_OF_UI)state
+{
+    if(state == START_STATE)
+    {
         [self.startButton setEnabled:YES];
         [self.resetButton setEnabled:NO];
+        
+        [self.startButton setAlpha:1.0];
+        [self.resetButton setAlpha:0.5];
     }
+    
+    else if(state == RESET_STATE)
+    {
+        [self.startButton setEnabled:NO];
+        [self.resetButton setEnabled:YES];
+        
+        [self.startButton setAlpha:0.5];
+        [self.resetButton setAlpha:1.0];
+    }
+    
 }
 
 
