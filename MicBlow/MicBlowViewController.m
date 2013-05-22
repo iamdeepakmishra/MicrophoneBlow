@@ -15,7 +15,7 @@ typedef enum
 }STATE_OF_UI; //FOR SHOWING A PARTICULAR STATE TO USER
 
 #define FINISH_POINT    45      // y coordinate
-#define LIMITED_TIME    30.0    // in secs
+#define LIMITED_TIME    15.0    // in secs
 
 @interface MicBlowViewController ()<UIAlertViewDelegate>
 @property (nonatomic, retain)AVAudioRecorder *recorder;
@@ -83,10 +83,13 @@ typedef enum
     
     if(self.lowPassResults > 0.95) // THRESHOLD LIMIT OF BLOWING IN THE MIC
     {
-        [self.ballObject setFrame:CGRectMake(self.ballObject.frame.origin.x,
-                                             self.ballObject.frame.origin.y - 1.5,
-                                             self.ballObject.frame.size.width,
-                                             self.ballObject.frame.size.height)];
+        [UIView animateWithDuration:0.01 animations:^{
+            [self.ballObject setFrame:CGRectMake(self.ballObject.frame.origin.x,
+                                                 self.ballObject.frame.origin.y - 1.5,
+                                                 self.ballObject.frame.size.width,
+                                                 self.ballObject.frame.size.height)];
+        }];
+        
         if(self.ballObject.frame.origin.y <= FINISH_POINT)
         {
             [self callingAlertWithMessage:[NSString stringWithFormat:@"You have finished in %0.2lf secs",self.timeLimitCounter]];
