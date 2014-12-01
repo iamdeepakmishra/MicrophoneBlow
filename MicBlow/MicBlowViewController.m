@@ -81,7 +81,7 @@ typedef enum
 	double peakPowerForChannel = pow(10, (0.05 * [self.recorder peakPowerForChannel:0]));
 	self.lowPassResults = ALPHA * peakPowerForChannel + (1.0 - ALPHA) * self.lowPassResults; // ADDING SOME FILTERS
     
-    if(self.lowPassResults > 0.10) // THRESHOLD LIMIT OF BLOWING IN THE MIC
+    if(self.lowPassResults > 0.01) // THRESHOLD LIMIT OF BLOWING IN THE MIC
     {
         [UIView animateWithDuration:0.01 animations:^{
             [self.ballObject setFrame:CGRectMake(self.ballObject.frame.origin.x,
