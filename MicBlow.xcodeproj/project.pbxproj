@@ -266,13 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Deepak Mishra (NKLY5QG9E3)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0FB0AD9E-CBBB-4C86-A0DD-41814DF9F37B";
+				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -281,16 +281,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		00F821881A3705CB0047891B /* Release copy */ = {
+		00F821881A3705CB0047891B /* ReleaseCopy */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,20 +315,22 @@
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Release copy";
+			name = ReleaseCopy;
 		};
-		00F821891A3705CB0047891B /* Release copy */ = {
+		00F821891A3705CB0047891B /* ReleaseCopy */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
 				WRAPPER_EXTENSION = app;
 			};
-			name = "Release copy";
+			name = ReleaseCopy;
 		};
 /* End XCBuildConfiguration section */
 
@@ -336,7 +340,7 @@
 			buildConfigurations = (
 				009741CC17321F6A004D253F /* Debug */,
 				009741CD17321F6A004D253F /* Release */,
-				00F821881A3705CB0047891B /* Release copy */,
+				00F821881A3705CB0047891B /* ReleaseCopy */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -346,7 +350,7 @@
 			buildConfigurations = (
 				009741CF17321F6A004D253F /* Debug */,
 				009741D017321F6A004D253F /* Release */,
-				00F821891A3705CB0047891B /* Release copy */,
+				00F821891A3705CB0047891B /* ReleaseCopy */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
