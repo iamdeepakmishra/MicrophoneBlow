@@ -206,6 +206,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0096BBC11A3ADF0F00918567 /* AppleRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_DISPLAY_NAME = MicBlow;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppleRelease;
+		};
+		0096BBC21A3ADF0F00918567 /* AppleRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "APPLE=1";
+				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AppleRelease;
+		};
 		009741CC17321F6A004D253F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -237,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		009741CD17321F6A004D253F /* Release */ = {
+		009741CD17321F6A004D253F /* ProductionRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +301,7 @@
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = ProductionRelease;
 		};
 		009741CF17321F6A004D253F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -277,22 +318,23 @@
 			};
 			name = Debug;
 		};
-		009741D017321F6A004D253F /* Release */ = {
+		009741D017321F6A004D253F /* ProductionRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PROD=1";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Release;
+			name = ProductionRelease;
 		};
-		00F821881A3705CB0047891B /* ReleaseCopy */ = {
+		00F821881A3705CB0047891B /* StagingRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,22 +357,23 @@
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = ReleaseCopy;
+			name = StagingRelease;
 		};
-		00F821891A3705CB0047891B /* ReleaseCopy */ = {
+		00F821891A3705CB0047891B /* StagingRelease */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
 				WRAPPER_EXTENSION = app;
 			};
-			name = ReleaseCopy;
+			name = StagingRelease;
 		};
 /* End XCBuildConfiguration section */
 
@@ -339,21 +382,23 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009741CC17321F6A004D253F /* Debug */,
-				009741CD17321F6A004D253F /* Release */,
-				00F821881A3705CB0047891B /* ReleaseCopy */,
+				009741CD17321F6A004D253F /* ProductionRelease */,
+				00F821881A3705CB0047891B /* StagingRelease */,
+				0096BBC11A3ADF0F00918567 /* AppleRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ProductionRelease;
 		};
 		009741CE17321F6A004D253F /* Build configuration list for PBXNativeTarget "MicBlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009741CF17321F6A004D253F /* Debug */,
-				009741D017321F6A004D253F /* Release */,
-				00F821891A3705CB0047891B /* ReleaseCopy */,
+				009741D017321F6A004D253F /* ProductionRelease */,
+				00F821891A3705CB0047891B /* StagingRelease */,
+				0096BBC21A3ADF0F00918567 /* AppleRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = ProductionRelease;
 		};
 /* End XCConfigurationList section */
 	};

@@ -38,6 +38,13 @@ typedef enum
 {
     [super viewDidLoad];
     
+#define STAGING
+    [self.view setBackgroundColor:[UIColor redColor]];
+#define PROD
+    [self.view setBackgroundColor:[UIColor greenColor]];
+#define APPLE
+    [self.view setBackgroundColor:[UIColor grayColor]];
+    
     //SETTING THE UI TO START STATE
     [self UIState:START_STATE];
 	
