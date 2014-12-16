@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9ADDB9B8-0229-439B-A1FA-B876B03CD984</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MicBlow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>37E50E227C46AB0FB0875F44AEFA364403B32852</key>
+		<string>https://github.com/deepakmishra11/MicrophoneBlow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MicBlow.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>37E50E227C46AB0FB0875F44AEFA364403B32852</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/deepakmishra11/MicrophoneBlow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>37E50E227C46AB0FB0875F44AEFA364403B32852</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>37E50E227C46AB0FB0875F44AEFA364403B32852</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MicrophoneBlow</string>
+		</dict>
+	</array>
+</dict>
+</plist>

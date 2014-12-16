@@ -19,6 +19,7 @@
 		009741C817321F6A004D253F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009741C617321F6A004D253F /* MainStoryboard.storyboard */; };
 		009741CB17321F6A004D253F /* MicBlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009741CA17321F6A004D253F /* MicBlowViewController.m */; };
 		009741D217321F9B004D253F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009741D117321F9B004D253F /* AVFoundation.framework */; };
+		00FF55C21A3EA21A00C1BD22 /* ShareClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF55C11A3EA21A00C1BD22 /* ShareClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		009741C917321F6A004D253F /* MicBlowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicBlowViewController.h; sourceTree = "<group>"; };
 		009741CA17321F6A004D253F /* MicBlowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MicBlowViewController.m; sourceTree = "<group>"; };
 		009741D117321F9B004D253F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00FF55C01A3EA21A00C1BD22 /* MicBlow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicBlow-Bridging-Header.h"; sourceTree = "<group>"; };
+		00FF55C11A3EA21A00C1BD22 /* ShareClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				009741C917321F6A004D253F /* MicBlowViewController.h */,
 				009741CA17321F6A004D253F /* MicBlowViewController.m */,
 				009741B517321F69004D253F /* Supporting Files */,
+				00FF55C11A3EA21A00C1BD22 /* ShareClass.swift */,
+				00FF55C01A3EA21A00C1BD22 /* MicBlow-Bridging-Header.h */,
 			);
 			path = MicBlow;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FF55C21A3EA21A00C1BD22 /* ShareClass.swift in Sources */,
 				009741BB17321F6A004D253F /* main.m in Sources */,
 				009741BF17321F6A004D253F /* MicBlowAppDelegate.m in Sources */,
 				009741CB17321F6A004D253F /* MicBlowViewController.m in Sources */,
@@ -235,14 +241,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "APPLE=1";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicBlow/MicBlow-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AppleRelease;
@@ -307,13 +316,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicBlow/MicBlow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -322,14 +335,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PROD=1";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicBlow/MicBlow-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = ProductionRelease;
@@ -363,14 +379,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8851a627-d052-4f0d-8459-94f270d5c284";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicBlow/MicBlow-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = StagingRelease;
