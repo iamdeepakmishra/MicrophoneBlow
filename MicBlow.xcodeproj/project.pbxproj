@@ -238,7 +238,7 @@
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "APPLE=1";
@@ -317,7 +317,7 @@
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				INFOPLIST_FILE = "MicBlow/MicBlow-Info.plist";
@@ -335,7 +335,7 @@
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PROD=1";
@@ -381,7 +381,7 @@
 			buildSettings = {
 				BUNDLE_IDENTIFIER = sg.com.ncs.mytransport;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: NCS Pte. Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MicBlow/MicBlow-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "STAGING=1";
